@@ -1,0 +1,1220 @@
+<!doctype html>
+<html ⚡>
+
+<head>
+    <meta charset="utf-8">
+    <title>Gentem</title>
+
+    <link rel="canonical" href="index.html">
+    <link rel="apple-touch-icon" sizes="57x57" href="/public/src/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/public/src/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/public/src/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/public/src/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/public/src/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/public/src/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/public/src/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/public/src/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/src/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/public/src/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/src/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/public/src/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/src/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/public/src/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/public/src/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta name="amp-script-src"
+        content="sha384-X8xW7VFd-a-kgeKjsR4wgFSUlffP7x8zpVmqC6lm2DPadWUnwfdCBJ2KbwQn6ADE sha384-nNFaDRiLzgQEgiC5kP28pgiJVfNLVuw-nP3VBV-e2s3fOh0grENnhllLfygAuU_M sha384-u7NPnrcs7p4vsbGLhlYHsId_iDJbcOWxmBd9bhVuPoA_gM_he4vyK6GsuvFvr2ym">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <script custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js" async></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
+
+    <!-- <link rel="stylesheet" href="/public/src/css/style.css"> -->
+    <style amp-custom>
+        *::after,
+        ::before {
+            box-sizing: border-box;
+            outline: 0
+        }
+
+        /* fallback */
+
+        @font-face {
+            font-family: 'Material Icons';
+            font-style: normal;
+            font-weight: 400;
+            src: url(/public/src/fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+        }
+
+        .material-icons {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -moz-font-feature-settings: 'liga';
+            -moz-osx-font-smoothing: grayscale;
+            vertical-align: middle;
+            vertical-align: -webkit-baseline-middle
+        }
+
+        /* cyrillic-ext */
+
+        @font-face {
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: local('Nunito Light'), local('Nunito-Light'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofAnsSUbOvISTs.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        }
+
+        /* cyrillic */
+
+        @font-face {
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: local('Nunito Light'), local('Nunito-Light'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofAnsSUZevISTs.woff2) format('woff2');
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+
+        /* vietnamese */
+
+        @font-face {
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: local('Nunito Light'), local('Nunito-Light'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofAnsSUbuvISTs.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+        }
+
+        /* latin-ext */
+
+        @font-face {
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: local('Nunito Light'), local('Nunito-Light'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofAnsSUb-vISTs.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+
+        @font-face {
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: local('Nunito Light'), local('Nunito-Light'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofAnsSUYevI.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            color: #204161
+                /* font-size: 18px */
+        }
+
+        amp-img {
+            vertical-align: middle
+                /* vertical-align: -webkit-baseline-middle */
+        }
+
+        a {
+            color: #3d7dd8;
+            text-decoration: none
+        }
+
+        /* STANDAR */
+
+        .m0 {
+            margin: 0
+        }
+
+        .m10 {
+            margin: 10px
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 60vw
+        }
+
+        @media only screen and (max-width:600px) {
+            .container {
+                max-width: 90vw
+            }
+        }
+
+        .btnPrimary {
+            width: 312px;
+            border: 1px solid #e64356;
+            background: #F44B53;
+            border-radius: 38px;
+            color: #fff;
+            padding: 10px;
+            text-align: center
+        }
+
+        .btnPrimary,
+        .btnSecondary,
+        .btnPrimaryDonate {
+            cursor: pointer
+        }
+
+        .btnPrimaryDonate {
+            width: 180px;
+            border: 1px solid #e64356;
+            background: #F44B53;
+            border-radius: 38px;
+            color: #fff;
+            padding: 10px;
+            text-align: center
+        }
+
+        .btnSecondary {
+            width: 312px;
+            border: 1px solid #237ed5;
+            background: #237ed5;
+            border-radius: 38px;
+            color: #fff;
+            padding: 10px;
+            text-align: center
+        }
+
+        .buttonTablet {
+            display: block;
+            position: fixed;
+            top: 20px;
+            right: 30px;
+            z-index: 1
+        }
+
+        @media only screen and (max-width: 600px) {
+            .buttonTablet {
+                display: none
+            }
+        }
+
+        /* .buttonTablet button {
+width: 180px
+} */
+
+        /* strong {
+color: #204161
+} */
+
+        /* STANDAR */
+
+        /* FOLD */
+
+        #logo {
+            position: fixed;
+            /* position: -webkit-sticky; */
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            padding: 10px 0;
+            background-color: #fff;
+            box-shadow: 0 2px 2px 0 rgba(221, 214, 214, 0.14), 0 3px 1px -2px rgba(255, 255, 255, 0.2), 0 1px 5px 0 rgba(0, 0, 0, .12)
+        }
+
+        @media only screen and (max-width:600px) {
+            #logo {
+                padding: 0;
+                background-color: transparent;
+                box-shadow: none
+            }
+        }
+
+        #logo a amp-img {
+            margin: 10px 32px
+        }
+
+        @media only screen and (max-width:900px) {
+            #logo a amp-img {
+                margin: 12px 24px
+            }
+
+        }
+
+        .imageFold {
+            width: 100%;
+            height: 70vh;
+            background-image: url(/public/src/img/foldImagePc.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center
+        }
+
+        /* @media only screen and(max-width:1200px) {}  */
+
+        @media only screen and (max-width:900px) {
+            .imageFold {
+                height: 60vh;
+                background-image: url(/public/src/img/foldTablet.png)
+            }
+        }
+
+        @media only screen and (max-width:768px) {
+            .imageFold {
+                height: 50vh;
+                background-image: url(/public/src/img/foldTablet.png)
+            }
+        }
+
+        @media only screen and (max-width:600px) {
+            .imageFold {
+                height: 50vh;
+                background-image: url(/public/src/img/foldMobile.png)
+            }
+        }
+
+        /* @media only screen and(max-width:480px){} */
+
+        /* @media only screen and(max-width:399px){} */
+
+        /* @media only screen and(max-width:359px){} */
+
+
+        .callToFold {
+            width: 100%;
+            height: 30vh
+        }
+
+        @media only screen and (max-width:900px) {
+            .callToFold {
+                height: 40vh;
+            }
+        }
+
+        @media only screen and (max-width:768px) {
+            .callToFold {
+                height: 50vh;
+            }
+        }
+
+        @media only screen and (max-width:600px) {
+            .callToFold {
+                height: 50vh;
+            }
+        }
+
+        /* @media only screen and (max-width:480px){} */
+        /* @media only screen and (max-width:399px){} */
+        /* @media only screen and (max-width:359px){}  */
+
+
+        .boxCallFold {
+            margin: 0 auto;
+            max-width: 600px;
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center
+        }
+
+        @media only screen and (max-width:630px) {
+            .boxCallFold {
+                max-width: 90%
+            }
+        }
+
+
+
+
+        .call_to_h1_principal {
+            margin: 10px 0;
+            font-size: 32px
+        }
+
+        @media only screen and (max-width:700px) {
+            .call_to_h1_principal {
+                font-size: 28px
+            }
+        }
+
+        @media only screen and (max-width:600px) {
+            .call_to_h1_principal {
+                font-size: 24px
+            }
+        }
+
+        .buttonFoldDonate {
+            margin: 10px 0 20px 0
+        }
+
+        .descr_fold {
+            margin: 10px 0;
+            text-align: center
+        }
+
+        /* FOLD */
+
+        /* HOW IT WORKS */
+
+        #howItWorks {
+            background: #F3EFEA;
+            padding: 20px 0
+        }
+
+        .containerHowItWorks {
+            max-width: 600px;
+            padding: 20px
+                /* float: left */
+        }
+
+        .boxHowItWorks {
+            margin: 0 auto;
+            max-width: 500px
+        }
+
+        .gridHowItWorks {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            grid-gap: 0;
+            margin: 0 auto;
+            max-width: 1050px
+        }
+
+        @media only screen and (max-width:1200px) {
+            .gridHowItWorks {
+                max-width: 900px
+            }
+        }
+
+        @media only screen and (max-width:900px) {
+            .gridHowItWorks {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                grid-gap: 40px 0;
+                max-width: 300px
+            }
+        }
+
+        /* @media only screen and (max-width:600px) {
+    .gridHowItWorks {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 15px 0;
+        max-width: 310px
+    }
+} */
+
+        .itemItWorks {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 300px
+        }
+
+        .titleItWorks h4 {
+            margin: 0
+        }
+
+        /* HOW IT WORKS */
+
+        /* WHY */
+
+        #why {
+            padding: 20px 0
+        }
+
+        .containerWhy {
+            max-width: 600px;
+            padding: 20px
+        }
+
+        /* @media only screen and (max-width:1200px) {} */
+
+        .gridWhy {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            grid-gap: 0 10px;
+            align-items: center;
+            justify-items: center;
+            margin: 0 auto;
+            max-width: 1100px
+        }
+
+
+        @media only screen and (max-width:1200px) {
+            .gridWhy {
+                max-width: 870px
+            }
+        }
+
+        @media only screen and (max-width:900px) {
+            .gridWhy {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                grid-gap: 40px 0;
+                max-width: 540px
+            }
+        }
+
+        @media only screen and (max-width:768px) {
+            .gridWhy {
+                max-width: 540px
+            }
+        }
+
+        @media only screen and (max-width:600px) {
+            .gridWhy {
+                max-width: 360px
+            }
+        }
+
+        @media only screen and (max-width:480px) {
+            .gridWhy {
+                max-width: 360px
+            }
+        }
+
+        @media only screen and (max-width:399px) {
+            .gridWhy {
+                max-width: 340px
+            }
+        }
+
+        @media only screen and (max-width:359px) {
+            .gridWhy {
+                max-width: 290px
+            }
+        }
+
+
+        .itemWhy {
+            /* max-width: 360px;     */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center
+        }
+
+        @media only screen and (max-width:1200px) {
+            .itemWhy {
+                max-width: 280px
+            }
+        }
+
+        @media only screen and (max-width:900px) {
+            .itemWhy {
+                max-width: 540px
+            }
+        }
+
+        @media only screen and (max-width:768px) {
+            .itemWhy {
+                width: 540px
+            }
+        }
+
+        @media only screen and (max-width:600px) {
+            .itemWhy {
+                width: 360px
+            }
+        }
+
+        @media only screen and (max-width:480px) {
+            .itemWhy {
+                width: 360px
+            }
+        }
+
+        @media only screen and (max-width:399px) {
+            .itemWhy {
+                width: 340px
+            }
+        }
+
+        @media only screen and (max-width:359px) {
+            .itemWhy {
+                width: 290px
+            }
+        }
+
+
+        /* --------- */
+
+        .bgItemWhy {
+            width: 360px;
+            height: 200px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center
+        }
+
+        @media only screen and (max-width:1200px) {
+            .bgItemWhy {
+                width: 280px
+            }
+        }
+
+        @media only screen and (max-width:900px) {
+            .bgItemWhy {
+                width: 540px
+            }
+        }
+
+        @media only screen and (max-width:768px) {
+            .bgItemWhy {
+                width: 540px
+            }
+        }
+
+        @media only screen and (max-width:600px) {
+            .bgItemWhy {
+                width: 360px
+            }
+        }
+
+        @media only screen and (max-width:480px) {
+            .bgItemWhy {
+                width: 360px
+            }
+        }
+
+        @media only screen and (max-width:399px) {
+            .bgItemWhy {
+                width: 340px
+            }
+        }
+
+        @media only screen and (max-width:359px) {
+            .bgItemWhy {
+                width: 290px
+            }
+        }
+
+        .trust {
+            background-image: url(/public/src/img/photo1.png)
+        }
+
+        .facility {
+            background-image: url(/public/src/img/photo2.png)
+        }
+
+        .solidarity {
+            background-image: url(/public/src/img/photo3.png)
+        }
+
+
+        .itemWhyTitle {
+            margin: 5px 0
+        }
+
+        .itemWhy span p {
+            margin: 0
+        }
+
+        /* .itemWhy span amp-img {
+width: 220px;
+height: 120px
+} */
+
+        /* WHY */
+
+        /* HELP */
+
+        #help {
+            background-color: #EECE66
+        }
+
+        /* @media only screen and (max-width:900px) {
+#help {
+height: 250px
+}
+} */
+
+        #bgHelp {
+            background-image: url(/public/src/img/manosAyuda.png);
+            background-size: cover;
+            background-position: center;
+            height: 450px
+        }
+
+        @media only screen and (max-width:600px) {
+            #bgHelp {
+                height: 360px
+            }
+        }
+
+        .gridHelp {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            height: inherit
+        }
+
+        /* HELP */
+
+        /* ALLIES */
+
+        #allies {
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center
+        }
+
+        .containerAllies {
+            margin: 0 auto;
+            max-width: 600px;
+            /* padding: 10px */
+        }
+
+        @media only screen and (max-width:600px) {
+            .containerAllies {
+                max-width: 330px
+            }
+        }
+
+        .gridAllies {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            grid-gap: 0;
+            margin: 0 auto;
+            max-width: 200px
+        }
+
+        .gridAllies span {
+            text-align: center
+        }
+
+        .titleHelp {
+            padding: 10px;
+            text-align: center;
+            font-size: 20px
+        }
+
+        .boxHelp {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center
+        }
+
+        /* ALLIES */
+
+        /* FOOTER */
+
+        footer {
+            background-color: #F3EFEA;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center
+        }
+
+        /* FOOTER */
+
+        /* MODAL */
+
+        #modalDonate {
+            position: fixed;
+            top: -120%;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #1A1928C9;
+            transition: .3s
+        }
+
+        .activeModalDonate {
+            top: 0
+        }
+
+        .ContainerModal {
+            background-color: #fff;
+            max-width: 370px;
+            border-radius: 20px;
+            /* overflow: auto; */
+            /* padding: 10px */
+        }
+
+        @media only screen and (max-width:600px) {
+            .ContainerModal {
+                max-width: 330px
+            }
+        }
+
+        #navModal {
+            padding: 10px;
+            height: 50px
+        }
+
+        #closeModal {
+            background-color: transparent;
+            border: 0;
+            padding: 5px;
+            border-radius: 40px;
+            color: #c1c1c1;
+            cursor: pointer
+        }
+
+        #navModal amp-img {
+            float: left
+        }
+
+        #navModal button {
+            float: right
+        }
+
+        #foldModal {
+            padding: 10px
+        }
+
+        #formModal {
+            /* height: 210px; */
+            padding: 10px
+        }
+
+        .succesForm {
+            color: green;
+            font-size: 18px
+        }
+
+        .errorForm {
+            color: red;
+            font-size: 18px
+        }
+
+        .inputModal {
+            margin-bottom: 10px;
+            /* text-align: center */
+        }
+
+        .inputModal input {
+            padding: 13px 10px;
+            background-color: #F3EFEA;
+            border: 1px solid #F3EFEA;
+            border-radius: 30px;
+            width: 94%
+        }
+
+        /* @media only screen and (max-width:900px) {
+.inputModal input {
+width: 290px
+}
+} */
+
+        /* #footerModal {
+background-color: #204161;
+color: #fff;
+padding: 10px
+} */
+
+        /* MODAL */
+    </style>
+
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style><noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+</head>
+
+<body>
+    <nav id="logo">
+        <a href="/">
+            <amp-img src="/public/src/img/logoAnimado.svg" width="150" height="45" layout="fixed" alt="Logo" noloading>
+            </amp-img>
+        </a>
+    </nav>
+    <section id="fold">
+        <div class="imageFold"></div>
+        <div class="callToFold">
+            <div class="boxCallFold">
+
+                <h1 class="call_to_h1_principal">Ayuda a los afectados por el <span class="call_to_h1">COVID-19</span>
+                </h1>
+
+                <amp-script layout="container" src="/public/src/js/main.js" class="amp-script-sample">
+                    <!-- <button id="hello">Click!</button> -->
+                    <div class="buttonTablet">
+                        <button class="btnPrimaryDonate donate">
+                            Dona ya!
+                            <amp-img src="/public/src/img/logos/heart.svg" width="19" height="17" layout="fixed"
+                                alt="icono donación" noloading>
+                            </amp-img>
+                        </button>
+                    </div>
+                    <div class="buttonFoldDonate">
+                        <button class="btnPrimary donate">
+                            Dona ya!
+                            <amp-img src="/public/src/img/logos/heart.svg" width="19" height="17" layout="fixed"
+                                alt="icono donación" noloading>
+                            </amp-img>
+                        </button>
+                    </div>
+
+                    <div id="modalDonate">
+                        <div class="ContainerModal">
+
+                            <div id="navModal">
+                                <amp-img src="/public/src/img/logo.png" width="150" height="50" layout="fixed" alt="">
+                                </amp-img>
+                                <button id="closeModal">
+                                    <i class="material-icons">
+                                        close
+                                    </i>
+                                </button>
+                            </div>
+
+                            <div id="foldModal">
+
+                                <h3 style="margin: 5px;">Nos estamos preparando</h3>
+                                <p style="margin: 5px;text-align: left;">
+                                    Somos un grupo de jóvenes trabajando fuertemente ara llevar esto adelante, pero
+                                    todavía la plataforma no esta completamente lista.
+                                    <br> Dejános tus datos y te haremos saber cuando la plataforma este online.
+                                    <br> Muchas gracias 🙏
+                                </p>
+                            </div>
+
+                            <div id="formModal">
+                                <!-- action-xhr="#" method="POST" target="_top" -->
+                                <!-- on="submit-success:AMP.setState({formResponse: event.response})" -->
+                                <!-- on="submit-success:form.clear" -->
+                                <form action-xhr="./prew.php" method="POST" target="_top" id="form">
+                                    <div class="inputModal">
+                                        <input type="text" name="name" placeholder="Nombre" required>
+                                    </div>
+                                    <div class="inputModal">
+                                        <input type="email" name="email" placeholder="Email" required>
+                                    </div>
+                                    <div class="inputModal" style="margin:15px 0 20px 0;text-align:center;">
+                                        <button class="btnSecondary">
+                                            Enviar
+                                            <amp-img src="/public/src/img/logos/send.svg" width="19" height="17"
+                                                layout="fixed" alt="icono envio" noloading>
+                                            </amp-img>
+                                        </button>
+                                    </div>
+
+                                    <div submit-success>
+                                        <template type="amp-mustache">
+                                            <p class="succesForm"> Gracias por tu interés <b>{{data}}</b> ya te
+                                                informaremos cuando
+                                                lancemos la
+                                                plataforma</p>
+                                        </template>
+                                    </div>
+                                    <div submit-error>
+                                        <template type="amp-mustache">
+                                            <p class="errorForm">
+                                                Error! porfavor vuelve a intentarlo más tarde
+                                            </p>
+                                        </template>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <!-- <div id="footerModal">
+                                <h3 style="margin: 0;">¿Cómo funciona?</h3>
+                                <p style="margin: 5px 0;text-align: left;">
+                                    Te conectamos con organizaciones sin ánimo de lucro de tu localidad que están
+                                    realmente
+                                    comprometidas con los más afectadas por la emergencia de el COVID-19
+                                </p>
+                            </div> -->
+
+                        </div>
+                    </div>
+                </amp-script>
+
+                <p class="descr_fold">
+                    En <strong>Gentem</strong> encontraras una lista de ONGs que estan trabajando con poblaciones
+                    afectadas por el coronavirus, y podras aportar a ellas de manera rápida y sencilla.
+                </p>
+
+            </div>
+        </div>
+        <!-- <amp-img src="/public/src/img/fotoPrincipalDesktop.png" width="100" height="35" layout="responsive" alt="">
+        </amp-img> -->
+    </section>
+
+    <section id="howItWorks">
+        <div class="containerHowItWorks">
+            <div class="boxHowItWorks">
+                <h2>Encuentra una ONG</h2>
+                <p>
+                    En <strong>Gentem</strong> encontraras ONGs que están trabajando con comunidades afectadas por el
+                    Coronavirus, y podrás aportar a ellas de manera rápida y sencilla.
+                </p>
+            </div>
+        </div>
+        <div class="gridHowItWorks">
+            <div class="itemItWorks">
+                <amp-img src="/public/src/img/logos/step1.svg" width="280" height="150" layout="fixed" alt="Logo">
+                </amp-img>
+                <span class="titleItWorks">
+                    <h4>
+                        Accede a la plataforma
+                    </h4>
+                </span>
+            </div>
+
+            <div class="itemItWorks">
+                <amp-img src="/public/src/img/logos/step2.svg" width="280" height="150" layout="fixed" alt="Logo">
+                </amp-img>
+                <span class="titleItWorks">
+                    <h4>
+                        Encuentra una ONG para apoyar
+                    </h4>
+                </span>
+            </div>
+
+
+            <div class="itemItWorks">
+                <amp-img src="/public/src/img/logos/step3.svg" width="280" height="150" layout="fixed" alt="Logo">
+                </amp-img>
+                <span class="titleItWorks">
+                    <h4>
+                        Ayuda a una comunidad en crisis
+                    </h4>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section id="why">
+        <div class="containerWhy">
+            <div class="boxHowItWorks">
+
+                <h2>¿Por qué?</h2>
+
+                <p>
+                    Gran cantidad de personas han decidido ayudar, pero su ayuda no se ha visto reflejada en las
+                    comunidades que quisieron impactar (?)
+                </p>
+            </div>
+        </div>
+        <div class="gridWhy">
+
+            <div class="itemWhy">
+                <span>
+                    <div class="bgItemWhy trust"></div>
+                    <!-- <amp-img src="/public/src/img/photo1.png" width="320" height="180" layout="fixed" alt="Confianza">
+                    </amp-img> -->
+                </span>
+                <span>
+                    <h3 class="itemWhyTitle">Confianza</h3>
+                    <p>
+                        Las ONGs en nuestra lista han sido filtradas por nuestro equipo para evitar fraudes a la hora de
+                        donar.
+                    </p>
+                </span>
+            </div>
+
+            <div class="itemWhy">
+                <span>
+                    <div class="bgItemWhy facility"></div>
+                    <!-- <amp-img src="/public/src/img/photo2.png" width="320" height="180" layout="fixed" alt="Facilidad">
+                    </amp-img> -->
+                </span>
+                <span>
+                    <h3 class="itemWhyTitle">Facilidad</h3>
+                    <p>
+                        Encuentra informacion clara y concisa sobre una ONG que se ajuste a tus valores y principios, y
+                        apoya su causa
+                    </p>
+                </span>
+            </div>
+
+            <div class="itemWhy">
+                <span>
+                    <div class="bgItemWhy solidarity"></div>
+                    <!-- <amp-img src="/public/src/img/photo3.png" width="320" height="180" layout="fixed" alt="Apoyo">
+                    </amp-img> -->
+                </span>
+                <span>
+                    <h3 class="itemWhyTitle">Solidaridad</h3>
+                    <p>
+                        Porque quedarse en casa en cuarentena es un privilegio que no todos tenemos el lujo de
+                        permitirnos
+                    </p>
+                </span>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="help">
+        <div id="bgHelp">
+            <div class="gridHelp">
+                <div class="titleHelp">
+                    <h2>¿Eres una ONG?</h2>
+                </div>
+                <div class="boxHelp">
+                    <p>Haz parte de <strong>Gentem</strong></p>
+                    <!-- on="tap:footer.scrollTo(duration=200)" -->
+                    <a href="mailto:hola@gentem.org" rel="external" target="_blank" class="btnSecondary">
+                        Contáctanos
+                        <amp-img src="/public/src/img/logos/send.svg" width="19" height="17" layout="fixed"
+                            alt="icono donación" noloading>
+                        </amp-img>
+                    </a>
+
+                </div>
+            </div>
+            <!-- <amp-img src="/public/src/img/manosAyuda.png" width="1440" height="520" layout="responsive" alt="">
+            </amp-img> -->
+        </div>
+    </section>
+
+    <section id="allies">
+        <div class="containerAllies">
+            <p>
+                <strong>Gentem</strong> no sería posible sin el apoyo de todos los que de una u otra forma, han
+                facilitado o apoyado este proyecto:
+
+                <div class="gridAllies">
+                    <span>
+                        <amp-img src="/public/src/img/logos/aliado1.svg" width="50" height="50" layout="fixed"
+                            alt="Aliado 1" title="Aliado 1">
+                        </amp-img>
+                    </span>
+
+                    <span>
+                        <amp-img src="/public/src/img/logos/aliado2.svg" width="35" height="50" layout="fixed"
+                            alt="Aliado 2" title="Aliado 2">
+                        </amp-img>
+                    </span>
+
+                    <span>
+                        <amp-img src="/public/src/img/logos/aliado3.svg" width="35" height="50" layout="fixed"
+                            alt="Aliado 3" title="Aliado 3">
+                        </amp-img>
+                    </span>
+                </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <h2>¿Eres una ONG?</h2>
+            <p>Si eres una ONG y quieres aparecer. contactános a
+                <strong><a href="mailto:">hola@gentem.org</a></strong>
+            </p>
+        </div>
+
+    </footer>
+    <!-- <div>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+
+        </a>
+    </div> -->
+    <!-- ░░░░░░░░░░░░▄▄▄█▀▀▀▀▀▀▀▀█▄▄▄░░░░░░░░░░░░
+    ░░░░░░░░▄▄█▀▀░░░░░░░░░░░░░░▀▀█▄▄░░░░░░░░
+    ░░░░░░▄█▀░░░░▄▄▄▄▄▄▄░░░░░░░░░░░▀█▄░░░░░░
+    ░░░░▄█▀░░░▄██▄▄▄▄▄▄▄██▄░░░░▄█▀▀▀▀██▄░░░░
+    ░░░█▀░░░░█▀▀▀░░▄██░░▄▄█░░░██▀▀▀███▄██░░░
+    ░░█░░░░░░▀█▀▀▀▀▀▀▀▀▀██▀░░░▀█▀▀▀▀███▄▄█░░
+    ░█░░░░░░░░░▀▀█▄▄██▀▀░░░░░░░░▀▄▄▄░░░▄▄▀█░
+    █▀░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▀▀▀▀▀░░▀█
+    █░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▄░░░░█
+    █░░░░░░░░░░░░░░░░░░░░░░░░▄▄▄▄▄██░░▀█░░░█
+    █░░░░░░░░░░░░░░█░░░▄▄▄█▀▀▀░░░▄█▀░░░░░░░█
+    █░░░░░░░░░░░░░░░░░░▀░░░░░░░░█▀░░░░░░░░░█
+    █▄░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▄█
+    ░█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█░
+    ░░█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█░░
+    ░░░█▄░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▄█░░░
+    ░░░░▀█▄░░░░░░░░░░░░░░░░░░░░░░░░░░▄█▀░░░░
+    ░░░░░░▀█▄░░░░░░░░░░░░░░░░░░░░░░▄█▀░░░░░░ -->
+
+</body>
+
+</html>
