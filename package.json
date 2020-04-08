@@ -1,0 +1,22 @@
+{
+  "name": "-landing-page",
+  "version": "1.0.0",
+  "description": "landing page Este landing fue creado con tecnologia **AMP** (Accelerated Mobil Page). para que el sitio web este validado como **AMP** se restringen algunas acciones como el **Javascript** puro y algunas etiquetas se cambiaran a las que **AMP** ha reemplazado. Posterior cuando el sitio web este completamente listo se deberá validar [aqui](validator.ampproject.org/), se puede hacer colocando el enlace en la parte superior ó validando directamente desde el codigo.",
+  "main": "index.js",
+  "scripts": {
+    "server": "browser-sync start --directory --server --files '*.js, *.html, *.css, *scss'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrigetSOS/-landing-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrigetSOS/-landing-page/issues"
+  },
+  "homepage": "https://github.com/BrigetSOS/-landing-page#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}

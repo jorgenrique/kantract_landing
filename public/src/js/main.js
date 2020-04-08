@@ -1,23 +1,9 @@
-const buttons = document.querySelectorAll('.donate'),
-    modal = document.querySelector("#modalDonate");
-// form = document.querySelector("#form");
 
+const   buttons = document.querySelectorAll('.sign_up_btn'),
+        modal = document.querySelector(".sign_up"),
+        closeModal = document.querySelector(".close_modal");
 
-const closeModal = document.querySelector("#closeModal");
+function modalOpen () { modal.classList.add('active'); }
 
-buttons.forEach((e) => {
-    e.onclick = () => {
-        modal.style.top = "0";
-        modal.style.zIndex = "1";
-    }
-});
-
-closeModal.addEventListener('click', () => {
-    modal.style.top = "-120%";
-    modal.style.zIndex = "-1";
-});
-
-// form.onsubmit = (el) => {
-//     // el.preventDefault;
-//     console.log("Form:", el);
-// }
+buttons.forEach(button => button.addEventListener('click', modalOpen))
+closeModal.addEventListener('click', () => { modal.classList.remove('active') });

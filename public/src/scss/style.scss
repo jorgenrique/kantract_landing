@@ -1,0 +1,50 @@
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/typography';
+@import 'partials/buttons';
+@import 'partials/modal';
+@import 'partials/header';
+@import 'partials/hero';
+@import 'partials/steps';
+@import 'partials/why';
+@import 'partials/ngos';
+@import 'partials/allies';
+@import 'partials/footer';
+
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+
+    color: $c-black;
+    font-family: $primary-font;
+    @include font-smoothing;
+}
+
+amp-img {
+    vertical-align: middle;
+    vertical-align: -webkit-baseline-middle;
+}
+
+section {
+
+    padding: 60px 24px 84px;
+
+    @include MQ(M) { padding: 60px 32px 84px; }
+    @include MQ(L) { padding: 60px 48px 84px; }
+}
+
+::selection {
+    background: $c-black;
+    color: $c-white;
+}
+
+::-moz-selection {
+    background: $c-black;
+    color: $c-white;
+}
