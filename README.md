@@ -1,4 +1,4 @@
-# -landing-page
+# Landing page (pre launch)
 Minified files:
 - index.html
 - style_min.css
