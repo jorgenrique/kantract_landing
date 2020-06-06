@@ -10,6 +10,7 @@
 @import 'partials/ngos';
 @import 'partials/allies';
 @import 'partials/footer';
+@import 'partials/error';
 
 * {
 
@@ -40,7 +41,7 @@ section {
 }
 
 input {
-    
+
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;

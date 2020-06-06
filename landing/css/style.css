@@ -36,13 +36,13 @@ h5,
 .t-h5 {
   font-size: 16px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 1.5;
 }
 
 p {
   font-size: 18px;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 2;
   padding-top: 24px;
 }
 
@@ -79,6 +79,12 @@ p {
 .btn.blue:hover {
   background-color: #145899;
 }
+.btn.black {
+  background-color: #1A1928;
+}
+.btn.black:hover {
+  background-color: #145899;
+}
 
 .btn_mobile {
   bottom: 0;
@@ -97,15 +103,6 @@ p {
 @media only screen and (min-width: 720px) {
   .btn_mobile {
     display: none;
-  }
-}
-
-.zEWidget-launcher {
-  margin: 12px !important;
-}
-@media only screen and (min-width: 720px) {
-  .zEWidget-launcher {
-    margin: 12px 32px !important;
   }
 }
 
@@ -534,6 +531,24 @@ footer .container {
 footer .container p {
   font-size: 14px;
   padding: 0;
+}
+
+.error_page {
+  background-color: #FFCF53;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+}
+.error_page .emoji {
+  font-size: 60px;
+  line-height: 1;
+  margin-bottom: 36px;
+}
+.error_page .logo img {
+  width: 180px;
 }
 
 * {

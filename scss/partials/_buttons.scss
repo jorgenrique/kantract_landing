@@ -28,6 +28,12 @@
         background-color: $c-blue__base;
         &:hover { background-color: $c-blue__dark; }
     }
+
+    &.black {
+
+        background-color: $c-black;
+        &:hover { background-color: $c-blue__dark; }
+    }
 }
 
 .btn_mobile {
@@ -44,11 +50,4 @@
     }
 
     @include MQ(M) { display: none }
-}
-
-.zEWidget-launcher {
-
-    margin: 12px !important;
-
-    @include MQ(M) { margin: 12px 32px !important }
 }
