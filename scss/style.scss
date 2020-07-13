@@ -5,6 +5,12 @@
 
 @import 'partials/header';
 @import 'partials/footer';
+
+@import 'partials/hero';
+@import 'partials/how-it-works';
+@import 'partials/about-us';
+@import 'partials/leads-form';
+
 @import 'partials/error';
 
 * {
@@ -17,9 +23,11 @@
 
 body {
 
-    color: $c-primary;
+    color: $c-black;
     font-family: $primary-font;
     @include font-smoothing;
+
+    padding-top: 42px;
 }
 
 input {
@@ -37,4 +45,9 @@ input {
 ::-moz-selection {
     background: $c-primary;
     color: $c-secondary;
+}
+
+section {
+
+    padding: 60px 24px;
 }

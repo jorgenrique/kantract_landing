@@ -1,9 +1,73 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
 .btn {
   box-shadow: 0px 4px 9px rgba(51, 51, 51, 0.15);
   -moz-box-shadow: 0px 4px 9px rgba(51, 51, 51, 0.15);
   -webkit-box-shadow: 0px 4px 9px rgba(51, 51, 51, 0.15);
 }
+header {
+  background-color: #F3F637;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  padding: 12px 24px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 5;
+}
+header .logo {
+  height: 18px;
+}
+
+footer {
+  padding: 60px 24px;
+}
+
+.hero {
+  padding: 0;
+}
+.hero .intro {
+  background-image: url(https://picsum.photos/480);
+  padding: 132px 24px 36px;
+  position: relative;
+}
+.hero .intro:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+  background: linear-gradient(0deg, #333 0%, rgba(51, 51, 51, 0.25) 100%);
+}
+.hero .intro .t-h1 {
+  color: #F3F637;
+  position: relative;
+  z-index: 1;
+}
+.hero .intro .t-h2 {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.hero .lead-form-1 {
+  background-color: #333;
+  padding: 60px 24px;
+}
+.hero .lead-form-1 p {
+  color: #fff;
+}
+
+.about-us {
+  background: #333;
+  color: #fff;
+}
+
+.leads-form {
+  background: #F3F637;
+  color: #333;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,10 +76,11 @@
 }
 
 body {
-  color: #fff;
-  font-family: "Nunito", sans-serif;
+  color: #333;
+  font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-top: 42px;
 }
 
 input {
@@ -25,13 +90,17 @@ input {
 }
 
 ::selection {
-  background: #fff;
+  background: #F3F637;
   color: #333;
 }
 
 ::-moz-selection {
-  background: #fff;
+  background: #F3F637;
   color: #333;
+}
+
+section {
+  padding: 60px 24px;
 }
 
 /*# sourceMappingURL=style.css.map */

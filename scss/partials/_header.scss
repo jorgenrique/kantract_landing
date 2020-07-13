@@ -1,1 +1,14 @@
-header {}
+header {
+
+    background-color: $c-primary;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    padding: 12px 24px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 5;
+
+    .logo { height: 18px; }
+}
