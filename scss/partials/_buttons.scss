@@ -2,52 +2,5 @@
 
     @include shadow_standard;
 
-    align-items: center;
-    background-color: $c-red__base;
-    border-radius: 36px;
-    border: none;
-    color: $c-white;
-    cursor: pointer;
-    display: flex;
-    font-size: 18px;
-    font-weight: 700;
-    justify-content: center;
-    line-height: 24px;
-    max-width: 320px;
-    padding: 12px 48px;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;;
-    width: 100%;
-
-    &:hover { background-color: $c-red__dark; }
-
-    .icon { margin-left: 16px;}
-
-    &.blue {
-
-        background-color: $c-blue__base;
-        &:hover { background-color: $c-blue__dark; }
-    }
-
-    &.black {
-
-        background-color: $c-black;
-        &:hover { background-color: $c-blue__dark; }
-    }
-}
-
-.btn_mobile {
-
-    bottom: 0;
-    padding: 24px 12px;
-    position: fixed;
-    z-index: 4;
-
-    .btn {
-
-        padding: 12px 24px;
-        @include MQ(S) { padding: 12px 32px; }
-    }
-
-    @include MQ(M) { display: none }
+    &:hover {}
 }

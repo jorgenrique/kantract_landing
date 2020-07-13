@@ -1,22 +1,3 @@
 .error_page {
 
-    background-color: $c-yellow;
-    color: $c-white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    min-height: 100vh;
-
-    .emoji {
-
-        font-size: 60px;
-        line-height: 1;
-        margin-bottom: 36px;
-    }
-
-    .logo img {
-
-        width: 180px;
-    }
 }

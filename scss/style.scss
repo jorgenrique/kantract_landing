@@ -2,13 +2,8 @@
 @import 'partials/mixins';
 @import 'partials/typography';
 @import 'partials/buttons';
-@import 'partials/modal';
+
 @import 'partials/header';
-@import 'partials/hero';
-@import 'partials/steps';
-@import 'partials/why';
-@import 'partials/ngos';
-@import 'partials/allies';
 @import 'partials/footer';
 @import 'partials/error';
 
@@ -22,22 +17,9 @@
 
 body {
 
-    color: $c-black;
+    color: $c-primary;
     font-family: $primary-font;
     @include font-smoothing;
-}
-
-amp-img {
-    vertical-align: middle;
-    vertical-align: -webkit-baseline-middle;
-}
-
-section {
-
-    padding: 60px 24px 84px;
-
-    @include MQ(M) { padding: 60px 32px 84px; }
-    @include MQ(L) { padding: 60px 48px 84px; }
 }
 
 input {
@@ -48,11 +30,11 @@ input {
 }
 
 ::selection {
-    background: $c-black;
-    color: $c-white;
+    background: $c-primary;
+    color: $c-secondary;
 }
 
 ::-moz-selection {
-    background: $c-black;
-    color: $c-white;
+    background: $c-primary;
+    color: $c-secondary;
 }
