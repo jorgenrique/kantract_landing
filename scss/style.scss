@@ -37,6 +37,9 @@ input {
     appearance: none;
 }
 
+ul { list-style: none; } /* Remove default bullets */
+
+
 ::selection {
     background: $c-primary;
     color: $c-secondary;
@@ -50,4 +53,14 @@ input {
 section {
 
     padding: 60px 24px;
+
+    @include MQ(M) { padding: 120px 36px; }
+    @include MQ(L) { padding: 120px 48px; }
+
+    .wrapper {
+
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 100%;
+    }
 }

@@ -1,1 +1,40 @@
-footer {}
+.how-it-works {
+
+    .item {
+
+        padding-top: 48px;
+
+        .text { padding-top: 12px; }
+    }
+
+    @include MQ(M) {
+
+        .wrapper {
+
+            display: flex;
+            flex-wrap: wrap;
+
+            .t-h3 { width: 100% }
+
+            .item {
+
+                display: flex;
+                flex-direction: column;
+                padding-right: 32px;
+                width: 50%;
+
+                .t-h4 {
+
+                    height: 48px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    @include MQ(M) {
+
+        .wrapper .item { padding-right: 64px; }
+    }
+}

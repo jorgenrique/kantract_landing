@@ -2,4 +2,60 @@
 
     background: $c-black;
     color: $c-white;
+
+    .items {
+
+        padding-top: 12px;
+        max-width: 600px;
+
+        li {
+
+            padding: 24px 0 0 16px;
+            position: relative;
+
+            &:before {
+
+                content: "";
+                background-color: $c-primary;
+                width: 8px;
+                height: 8px;
+                position: absolute;
+                left: 0;
+                top: 32px;
+            }
+        }
+    }
+
+    .workspace {
+
+        padding-top: 60px;
+        text-align: center;
+
+        @include MQ(M) { text-align: right; }
+        @include MQ(L) { text-align: center; }
+
+        img {
+
+            max-width: 480px;
+            width: 100%;
+        }
+    }
+
+    .wrapper {
+
+        @include MQ(L) {
+
+            display: flex;
+            flex-wrap: wrap;
+
+            .t-h3 { width: 100%; }
+
+            .items,
+            .workspace {
+
+                padding-top: 24px;
+                width: 50%;
+            }
+        }
+    }
 }

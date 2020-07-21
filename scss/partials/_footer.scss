@@ -1,4 +1,64 @@
 footer {
 
-    padding: 60px 24px;
+    padding: 36px;
+
+    .some {
+
+        display:flex;
+        width: 100%;
+        justify-content: center;
+
+        .icon { padding: 0 16px; }
+    }
+
+    .links {
+
+        text-align: center;
+
+        .terms {
+
+            display: inline-block;
+            padding-top: 24px;
+        }
+    }
+
+    .chat_dummy { display: none; }
+
+    @include MQ(M) {
+
+        .wrapper {
+
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            margin: 0 auto;
+            max-width: 1200px;
+            width: 100%;
+
+            .chat_dummy {
+
+                display: flex;
+                flex: 1;
+            }
+
+            .some {
+
+                flex: 1;
+            }
+
+            .links {
+
+                align-items: flex-start;
+                justify-content: center;
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                padding: 0;
+
+                .terms { padding: 0; }
+            }
+        }
+    }
 }
+
+.wrapper-AtBcr { margin: 24px; }

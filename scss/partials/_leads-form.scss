@@ -1,4 +1,20 @@
-.leads-form {
+.lead-forms {
+
+    p { padding-top: 24px; }
+}
+
+.lead-form-1 {
+
+    background-color: $c-black;
+    padding: 60px 24px;
+
+    @include MQ(M) { padding: 60px 36px; }
+    @include MQ(L) { padding: 60px 48px; }
+
+    p { color: $c-white; }
+}
+
+.lead-form-2 {
 
     background: $c-primary;
     color: $c-black;
