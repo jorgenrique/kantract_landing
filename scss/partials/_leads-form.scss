@@ -1,15 +1,85 @@
 .lead-forms {
 
     p { padding-top: 24px; }
+
+    .mailchimp-form {
+
+        padding-top: 12px;
+
+        .mc-field-group {
+
+            display: flex;
+            flex-direction: column;
+            padding-top: 12px;
+
+            label {
+
+                color: white;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+
+            input {
+
+
+                border: none;
+                border-radius: 4px;
+                line-height: 24px;
+                font-size: 16px;
+                font-family: $primary-font;
+                margin-top: 6px;
+                padding: 6px 12px;
+            }
+        }
+
+        .button {
+
+            background: $c-primary;
+            border-radius: 4px;
+            border: 1px solid rgba($c-primary, 0);
+            color: $c-black;
+            cursor: pointer;
+            font-weight: 600;
+            line-height: 24px;
+            font-size: 14px;
+            margin-top: 24px;
+            padding: 6px 24px;
+            text-align: center;
+            transition: all 0.3s;
+            width: 100%;
+
+            &:hover {
+
+                background: rgba($c-primary, 0);
+                border: 1px solid $c-primary;
+                color: $c-primary;
+            }
+        }
+
+        @include MQ(M) {
+
+            .form-container {
+
+                display: flex;
+                align-items: flex-end;
+
+                .mc-field-group {
+
+                    width: 240px;
+                    margin-right: 16px;
+                }
+            }
+        }
+    }
 }
 
 .lead-form-1 {
 
     background-color: $c-black;
-    padding: 60px 24px;
+    padding: 24px 24px 96px;
 
-    @include MQ(M) { padding: 60px 36px; }
-    @include MQ(L) { padding: 60px 48px; }
+    @include MQ(M) { padding: 24px 36px 96px; }
+    @include MQ(L) { padding: 24px 48px 96px; }
 
     p { color: $c-white; }
 }
@@ -18,4 +88,21 @@
 
     background: $c-primary;
     color: $c-black;
+
+    .mailchimp-form {
+
+        .mc-field-group label { color: $c-black; }
+
+        .button {
+
+            background: $c-black;
+            color: $c-primary;
+
+            &:hover {
+
+                border: 1px solid $c-black;
+                color: $c-black;
+            }
+        }
+    }
 }
