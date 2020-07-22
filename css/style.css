@@ -252,6 +252,16 @@ footer .chat_dummy {
 .lead-forms .mailchimp-form {
   padding-top: 12px;
 }
+.lead-forms .mailchimp-form .responses {
+  position: absolute;
+  bottom: 84px;
+}
+.lead-forms .mailchimp-form .responses .response {
+  color: #F3F637;
+}
+.lead-forms .mailchimp-form .responses .response a {
+  color: #F3F637;
+}
 .lead-forms .mailchimp-form .mc-field-group {
   display: flex;
   flex-direction: column;
@@ -280,7 +290,7 @@ footer .chat_dummy {
   font-weight: 600;
   line-height: 24px;
   font-size: 14px;
-  margin-top: 24px;
+  margin-top: 30px;
   padding: 6px 24px;
   text-align: center;
   transition: all 0.3s;
@@ -294,7 +304,7 @@ footer .chat_dummy {
 @media only screen and (min-width: 720px) {
   .lead-forms .mailchimp-form .form-container {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
   }
   .lead-forms .mailchimp-form .form-container .mc-field-group {
     width: 240px;
