@@ -1,4 +1,7 @@
-.lead-forms {
+.lead-form {
+
+    background: $c-primary;
+    color: $c-black;
 
     p { padding-top: 24px; }
 
@@ -6,15 +9,17 @@
 
         padding-top: 12px;
 
+        .form-container { position: relative; }
+
         .responses {
 
             position: absolute;
-            bottom: 84px;
+            bottom: -36px;
 
             .response {
 
-                color: $c-primary;
-                a { color: $c-primary; }
+                color: $c-black;
+                a { color: $c-black; }
             }
         }
 
@@ -26,7 +31,7 @@
 
             label {
 
-                color: white;
+                color: $c-black;
                 font-size: 12px;
                 text-transform: uppercase;
             }
@@ -44,30 +49,6 @@
             }
         }
 
-        .button {
-
-            background: $c-primary;
-            border-radius: 4px;
-            border: 1px solid rgba($c-primary, 0);
-            color: $c-black;
-            cursor: pointer;
-            font-weight: 600;
-            line-height: 24px;
-            font-size: 14px;
-            margin-top: 30px;
-            padding: 6px 24px;
-            text-align: center;
-            transition: all 0.3s;
-            width: 100%;
-
-            &:hover {
-
-                background: rgba($c-primary, 0);
-                border: 1px solid $c-primary;
-                color: $c-primary;
-            }
-        }
-
         @include MQ(M) {
 
             .form-container {
@@ -82,28 +63,6 @@
                 }
             }
         }
-    }
-}
-
-.lead-form-1 {
-
-    background-color: $c-black;
-    padding: 24px 24px 96px;
-
-    @include MQ(M) { padding: 24px 36px 96px; }
-    @include MQ(L) { padding: 24px 48px 96px; }
-
-    p { color: $c-white; }
-}
-
-.lead-form-2 {
-
-    background: $c-primary;
-    color: $c-black;
-
-    .mailchimp-form {
-
-        .mc-field-group label { color: $c-black; }
 
         .button {
 
@@ -112,6 +71,7 @@
 
             &:hover {
 
+                background: rgba($c-primary, 0);
                 border: 1px solid $c-black;
                 color: $c-black;
             }

@@ -1,6 +1,23 @@
-.btn {
+.button {
 
-    @include shadow_standard;
+    background: $c-primary;
+    border-radius: 4px;
+    border: 1px solid rgba($c-primary, 0);
+    color: $c-black;
+    cursor: pointer;
+    font-weight: 600;
+    line-height: 24px;
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 6px 24px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s;
 
-    &:hover {}
+    &:hover {
+
+        background: rgba($c-primary, 0);
+        border: 1px solid $c-primary;
+        color: $c-primary;
+    }
 }
