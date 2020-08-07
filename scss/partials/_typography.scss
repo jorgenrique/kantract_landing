@@ -3,6 +3,9 @@
 a {
 
     color: $c-black;
+    text-decoration: none;
+
+    @include MQ(L) { &:hover { text-decoration: underline; } }
 }
 
 h1,

@@ -14,10 +14,13 @@
     text-transform: uppercase;
     transition: all 0.3s;
 
-    &:hover {
+    @include MQ(L) {
 
-        background: rgba($c-primary, 0);
-        border: 1px solid $c-primary;
-        color: $c-primary;
+        &:hover {
+
+            background: rgba($c-primary, 0);
+            border: 1px solid $c-primary;
+            color: $c-primary;
+        }
     }
 }

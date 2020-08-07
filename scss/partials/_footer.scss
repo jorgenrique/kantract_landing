@@ -4,11 +4,20 @@ footer {
 
     .some {
 
-        display:flex;
+        display: flex;
         width: 100%;
         justify-content: center;
 
-        .icon { padding: 0 16px; }
+        .icon {
+
+            margin: 0 16px;
+            img { transition: transform 0.3s; }
+
+            @include MQ(L) {
+
+                &:hover { img { transform: scale(1.1); } }
+            }
+        }
     }
 
     .links {
@@ -24,6 +33,7 @@ footer {
 
     .chat_dummy { display: none; }
 
+    /*
     @include MQ(M) {
 
         .wrapper {
@@ -35,15 +45,10 @@ footer {
             max-width: 1200px;
             width: 100%;
 
-            .chat_dummy {
-
-                display: flex;
-                flex: 1;
-            }
-
             .some {
 
                 flex: 1;
+                justify-content: flex-end;
             }
 
             .links {
@@ -59,6 +64,5 @@ footer {
             }
         }
     }
+    */
 }
-
-.wrapper-AtBcr { margin: 24px; }

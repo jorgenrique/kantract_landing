@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap");
 a {
   color: #333;
+  text-decoration: none;
+}
+@media only screen and (min-width: 1180px) {
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 h1,
@@ -53,10 +59,12 @@ p {
   text-transform: uppercase;
   transition: all 0.3s;
 }
-.button:hover {
-  background: rgba(243, 246, 55, 0);
-  border: 1px solid #F3F637;
-  color: #F3F637;
+@media only screen and (min-width: 1180px) {
+  .button:hover {
+    background: rgba(243, 246, 55, 0);
+    border: 1px solid #F3F637;
+    color: #F3F637;
+  }
 }
 
 header {
@@ -76,6 +84,38 @@ header .logo {
 
 footer {
   padding: 36px;
+  /*
+  @include MQ(M) {
+
+      .wrapper {
+
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+          margin: 0 auto;
+          max-width: 1200px;
+          width: 100%;
+
+          .some {
+
+              flex: 1;
+              justify-content: flex-end;
+          }
+
+          .links {
+
+              align-items: flex-start;
+              justify-content: center;
+              display: flex;
+              flex: 1;
+              flex-direction: column;
+              padding: 0;
+
+              .terms { padding: 0; }
+          }
+      }
+  }
+  */
 }
 footer .some {
   display: flex;
@@ -83,7 +123,15 @@ footer .some {
   justify-content: center;
 }
 footer .some .icon {
-  padding: 0 16px;
+  margin: 0 16px;
+}
+footer .some .icon img {
+  transition: transform 0.3s;
+}
+@media only screen and (min-width: 1180px) {
+  footer .some .icon:hover img {
+    transform: scale(1.1);
+  }
 }
 footer .links {
   text-align: center;
@@ -94,38 +142,6 @@ footer .links .terms {
 }
 footer .chat_dummy {
   display: none;
-}
-@media only screen and (min-width: 720px) {
-  footer .wrapper {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: 1200px;
-    width: 100%;
-  }
-  footer .wrapper .chat_dummy {
-    display: flex;
-    flex: 1;
-  }
-  footer .wrapper .some {
-    flex: 1;
-  }
-  footer .wrapper .links {
-    align-items: flex-start;
-    justify-content: center;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    padding: 0;
-  }
-  footer .wrapper .links .terms {
-    padding: 0;
-  }
-}
-
-.wrapper-AtBcr {
-  margin: 24px;
 }
 
 .hero {
