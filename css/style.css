@@ -13,7 +13,7 @@ h1,
 .t-h1 {
   font-weight: 500;
   font-size: 28px;
-  letter-spacing: 0.1;
+  letter-spacing: 0.1px;
   line-height: 36px;
 }
 
@@ -135,10 +135,17 @@ footer .some .icon img {
 }
 footer .links {
   text-align: center;
-}
-footer .links .terms {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 24px;
+}
+footer .links .item {
+  font-size: 13px;
+  display: inline-block;
+}
+footer .links div {
+  padding: 0 8px;
 }
 footer .chat_dummy {
   display: none;
@@ -338,6 +345,30 @@ footer .chat_dummy {
   background: rgba(243, 246, 55, 0);
   border: 1px solid #333;
   color: #333;
+}
+.lead-form .mailchimp-form .claim {
+  font-size: 12px;
+  padding-top: 12px;
+}
+.lead-form .mailchimp-form .claim a {
+  text-decoration: underline;
+}
+@media only screen and (min-width: 720px) {
+  .lead-form .mailchimp-form .claim {
+    max-width: 240px;
+    padding: 30px 0 0 8px;
+  }
+}
+
+.terms .t-h2 {
+  padding-top: 12px;
+}
+.terms .t-h3 {
+  padding-top: 24px;
+}
+.terms p {
+  max-width: 840px;
+  padding-top: 12px;
 }
 
 * {

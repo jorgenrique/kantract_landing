@@ -23,12 +23,18 @@ footer {
     .links {
 
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 24px;
 
-        .terms {
+        .item {
 
+            font-size: 13px;
             display: inline-block;
-            padding-top: 24px;
         }
+
+        div { padding: 0 8px; }
     }
 
     .chat_dummy { display: none; }
