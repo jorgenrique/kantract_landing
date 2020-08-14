@@ -1,11 +1,13 @@
 .terms {
 
-    .t-h2 { padding-top: 12px; }
-    .t-h3 { padding-top: 24px; }
+    .t-h2 { padding: 24px 0 36px; }
+    .t-h3 { padding-top: 48px; }
 
     p {
 
         max-width: 840px;
         padding-top: 12px;
     }
+
+    a { text-decoration: underline; }
 }
